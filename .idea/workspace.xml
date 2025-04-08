@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f898e489-29be-4640-a873-51cd25e4b952" name="Changes" comment="" />
+    <list default="true" id="f898e489-29be-4640-a873-51cd25e4b952" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/CRUD/read.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Insert/InserirDados.py" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD/create.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Insert/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SGBD/ConexaoBanco.py" beforeDir="false" afterPath="$PROJECT_DIR$/SGBD/conexaoBanco.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,9 +25,12 @@
       </list>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2vLFbewr4fjhf1LoHSCj41RwHBT" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -29,7 +40,11 @@
   "keyToString": {
     "Python.ConexaoBanco.executor": "Run",
     "Python.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "Python.read.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/Documentos/Projetos de programação/Python/ProjetoCandidaturas"
   }
 }]]></component>
   <component name="RecentsManager">

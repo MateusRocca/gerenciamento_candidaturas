@@ -1,18 +1,30 @@
-from Insert.InserirDados import inserirDados
+from CRUD.create import inserir
+from CRUD.read import lerDados
+from SGBD.conexaoBanco import conectarBanco
 
-nome_vaga = input('Insira o nome da vaga: ')
-nome_empresa = input('Insira o nome da Empresa: ')
-descricao_vaga = input('Insira a descrição da vaga: ')
-salario = input('Insira o salário: ')
-candidatura_status = input('Insira o status da candidatura(Em andamento, Encerrada: ')
+def menu():
+    while True:
+        print("\n===== MENU PRINCIPAL =====")
+        print("1 - Inserir nova candidatura")
+        print("2 - Consultar candidaturas")
+        print("3 - Sair")
 
-# Debug
-print("\nDADOS A ENVIAR:")
-print("Nome vaga:", nome_vaga)
-print("Empresa:", nome_empresa)
-print("Descrição:", descricao_vaga)
-print("Salário:", salario)
-print("Status:", candidatura_status)
-print("\n")
+        opcao = input("Escolha uma opção: ").strip()
 
-inserirDados(nome_vaga, nome_empresa, descricao_vaga, salario, candidatura_status)
+        if opcao == "1":
+            inserir()
+        elif opcao == "2":
+            conexao = conectarBanco()
+            if conexao:
+                lerDados(conexao)
+                conexao.close()
+            else:
+                print("Erro ao conectar ao banco de dados.")
+        elif opcao == "3":
+            print("Saindo do sistema.")
+            break
+        else:
+            print("Opção inválida. Tente novamente.")
+
+if __name__ == "__main__":
+    menu()

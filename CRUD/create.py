@@ -1,4 +1,4 @@
-from SGBD.ConexaoBanco import conectarBanco
+from SGBD.conexaoBanco import conectarBanco
 
 def inserirDados(nome_vaga, nome_empresa, descricao_vaga, salario, candidatura_status):
     conexao = conectarBanco()
@@ -21,3 +21,13 @@ def inserirDados(nome_vaga, nome_empresa, descricao_vaga, salario, candidatura_s
     finally:
         cursor.close()
         conexao.close()
+
+def inserir():
+    print("\n---- INSERIR NOVA CANDIDATURA ----")
+    nome_vaga = input('Insira o nome da vaga: ').strip()
+    nome_empresa = input('Insira o nome da Empresa: ').strip()
+    descricao_vaga = input('Insira a descrição da vaga: ').strip()
+    salario = input('Insira o salário: ').strip()
+    candidatura_status = input('Insira o status da candidatura (Em andamento, Encerrada): ').strip()
+
+    inserirDados(nome_vaga, nome_empresa, descricao_vaga, salario, candidatura_status)
